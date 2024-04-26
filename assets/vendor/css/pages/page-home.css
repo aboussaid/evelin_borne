@@ -1,0 +1,19 @@
+body {
+  background-image: url(../../../img/home-bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+body .welcome {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0px 0px 3px #1f0f0f;
+  position: relative;
+}
+body img {
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.4));
+          filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.4));
+}
