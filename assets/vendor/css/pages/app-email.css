@@ -20,9 +20,7 @@
   width: 16.25rem;
   height: 100%;
   z-index: 4;
-  -ms-flex-preferred-size: 16.25rem;
-      flex-basis: 16.25rem;
-  -webkit-transition: all 0.2s;
+  flex-basis: 16.25rem;
   transition: all 0.2s;
 }
 .app-email .app-email-sidebar .btn-compost-wrapper {
@@ -76,12 +74,8 @@
 .app-email .app-email-compose .email-compose-to .select2-selection .select2-selection__choice {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   line-height: 0;
 }
 .app-email .app-email-compose .email-compose-to .select2-selection__choice__remove {
@@ -139,7 +133,6 @@
 }
 .app-email .app-emails-list .email-list li {
   padding: 0.875rem 1rem;
-  -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   cursor: pointer;
   z-index: 1;
@@ -160,9 +153,7 @@
 }
 .app-email .app-emails-list .email-list li.email-list-item:not(.list-inline-item):hover {
   z-index: 5;
-  -webkit-transform: translateY(-2px);
-      -ms-transform: translateY(-2px);
-          transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 .app-email .app-email-view {
   position: absolute;
@@ -171,7 +162,6 @@
   width: 100%;
   height: calc(100vh - 12rem);
   z-index: -1;
-  -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 .layout-navbar-hidden .app-email .app-email-view {
@@ -230,7 +220,6 @@
   display: none;
 }
 .app-email .app-email-view .app-email-view-content .email-card-last {
-  -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
 .app-email .app-email-view .app-email-view-content .email-card-last:before {
@@ -314,25 +303,21 @@
   background-color: rgba(75, 70, 92, 0.04);
 }
 .light-style .app-email .email-list li.email-list-item:hover {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(75, 70, 92, 0.15);
-          box-shadow: 0 2px 5px 0 rgba(75, 70, 92, 0.15);
+  box-shadow: 0 2px 5px 0 rgba(75, 70, 92, 0.15);
 }
 .light-style .app-email .email-list li.email-list-item .email-list-item-actions li {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .light-style .app-email .email-list li.email-list-item[data-starred=true] .email-list-item-bookmark {
   color: #ff9f43;
 }
 .light-style .app-email .app-email-view .email-card-last:before {
   background-color: rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, 0.1);
-          box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, 0.1);
+  box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, 0.1);
 }
 .light-style .app-email .app-email-view .email-card-last:after {
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, 0.1);
-          box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, 0.1);
+  box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, 0.1);
 }
 .light-style .app-email .app-email-view .email-attachment-title {
   font-weight: 500;
@@ -355,25 +340,21 @@
   background-color: rgba(134, 146, 208, 0.06);
 }
 .dark-style .app-email .email-list li.email-list-item:hover {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.15);
-          box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.15);
 }
 .dark-style .app-email .email-list li.email-list-item .email-list-item-actions li {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .dark-style .app-email .email-list li.email-list-item[data-starred=true] .email-list-item-bookmark {
   color: #ff9f43;
 }
 .dark-style .app-email .app-email-view .email-card-last:before {
   background-color: rgba(47, 51, 73, 0.5);
-  -webkit-box-shadow: 0 0.25rem 1.25rem rgba(15, 20, 34, 0.4);
-          box-shadow: 0 0.25rem 1.25rem rgba(15, 20, 34, 0.4);
+  box-shadow: 0 0.25rem 1.25rem rgba(15, 20, 34, 0.4);
 }
 .dark-style .app-email .app-email-view .email-card-last:after {
   background-color: rgba(47, 51, 73, 0.8);
-  -webkit-box-shadow: 0 0.25rem 1.25rem rgba(15, 20, 34, 0.4);
-          box-shadow: 0 0.25rem 1.25rem rgba(15, 20, 34, 0.4);
+  box-shadow: 0 0.25rem 1.25rem rgba(15, 20, 34, 0.4);
 }
 
 [dir=rtl] .app-email .app-emails-list .emails-list-header .dropdown-menu-end {
@@ -406,9 +387,7 @@
 }
 [dir=rtl] .app-email .app-email-view .app-email-view-header .ti-chevron-right,
 [dir=rtl] .app-email .app-email-view .app-email-view-header .ti-chevron-left {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 @media (min-width: 1199px) {
   [dir=rtl] .email-list li .email-list-item-meta {

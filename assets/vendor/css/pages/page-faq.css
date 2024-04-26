@@ -15,10 +15,8 @@
   left: 0;
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: left;
-     object-position: left;
+  object-fit: cover;
+  object-position: left;
 }
 
 .light-style .bg-faq-section {

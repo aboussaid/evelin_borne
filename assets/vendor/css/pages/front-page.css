@@ -22,7 +22,6 @@
 }
 
 .card[class*=card-hover-border-] {
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -32,10 +31,8 @@
   left: 0;
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: left;
-     object-position: left;
+  object-fit: cover;
+  object-position: left;
 }
 
 .section-title-img {
@@ -54,8 +51,7 @@
 }
 
 nav.layout-navbar {
-  -webkit-backdrop-filter: unset !important;
-          backdrop-filter: unset !important;
+  backdrop-filter: unset !important;
   height: auto !important;
   z-index: 999 !important;
 }
@@ -74,13 +70,9 @@ nav.layout-navbar.navbar-active::after {
 }
 
 .navbar.landing-navbar {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-transition: all 0.2s ease-in-out;
+  box-shadow: none;
   transition: all 0.2s ease-in-out;
-  -webkit-transform: unset !important;
-      -ms-transform: unset !important;
-          transform: unset !important;
+  transform: unset !important;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   margin-top: 1rem;
@@ -101,17 +93,14 @@ nav.layout-navbar.navbar-active::after {
   .navbar.landing-navbar .navbar-nav .nav-item.mega-dropdown > .dropdown-menu {
     max-width: 1300px;
     inset-inline-start: 50% !important;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     top: 100%;
   }
 }
 @media (max-width: 991.98px) {
   .navbar.landing-navbar .navbar-nav .nav-item.mega-dropdown > .dropdown-menu {
     background: transparent;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     border: none;
   }
 }
@@ -135,7 +124,6 @@ nav.layout-navbar.navbar-active::after {
     width: 100%;
     height: 100%;
     background-color: rgba(75, 70, 92, 0.78);
-    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     z-index: 9998;
   }
@@ -149,7 +137,6 @@ nav.layout-navbar.navbar-active::after {
     inset-inline-start: -100%;
     top: 0;
     overflow-y: auto;
-    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     z-index: 9999;
   }
@@ -181,8 +168,7 @@ nav.layout-navbar.navbar-active::after {
 }
 .light-style .layout-navbar.navbar-active .navbar.landing-navbar {
   background: #fff;
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
-          box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
+  box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
 }
 .light-style .layout-navbar .menu-text {
   color: #5d596c;
@@ -212,20 +198,16 @@ nav.layout-navbar.navbar-active::after {
 .dark-style .layout-navbar.navbar-active .navbar.landing-navbar {
   background: #2f3349;
   border-color: #2f3349;
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(15, 20, 34, 0.4);
-          box-shadow: 0 0.125rem 0.25rem rgba(15, 20, 34, 0.4);
+  box-shadow: 0 0.125rem 0.25rem rgba(15, 20, 34, 0.4);
 }
 
 @media (min-width: 992px) {
   [dir=rtl] .navbar.landing-navbar .navbar-nav .nav-item.mega-dropdown > .dropdown-menu {
-    -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-            transform: translateX(50%);
+    transform: translateX(50%);
   }
 }
 
 .landing-footer .footer-link {
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .landing-footer .footer-link:hover {
@@ -242,8 +224,7 @@ nav.layout-navbar.navbar-active::after {
   }
 }
 .landing-footer .footer-top .footer-bg {
-  -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 @media (min-width: 992px) {
   .landing-footer .footer-logo-description {
@@ -260,18 +241,6 @@ nav.layout-navbar.navbar-active::after {
 }
 .landing-footer .footer-form input:hover:not([disabled]):not([focus]) {
   border-color: #434968;
-}
-.landing-footer .footer-form input::-webkit-input-placeholder {
-  color: rgba(211, 212, 220, 0.5);
-}
-.landing-footer .footer-form input::-moz-placeholder {
-  color: rgba(211, 212, 220, 0.5);
-}
-.landing-footer .footer-form input:-ms-input-placeholder {
-  color: rgba(211, 212, 220, 0.5);
-}
-.landing-footer .footer-form input::-ms-input-placeholder {
-  color: rgba(211, 212, 220, 0.5);
 }
 .landing-footer .footer-form input::placeholder {
   color: rgba(211, 212, 220, 0.5);

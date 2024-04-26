@@ -19,15 +19,11 @@
   position: absolute;
   overflow: hidden;
   background-color: #fff;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  -ms-flex-preferred-size: 21rem;
-      flex-basis: 21rem;
+  flex-grow: 0;
+  flex-basis: 21rem;
   left: calc(-21rem - 1.2rem);
   height: 100%;
   width: 21rem;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   z-index: 2;
 }

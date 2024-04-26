@@ -10,11 +10,7 @@
   }
 }
 .app-kanban .kanban-wrapper .kanban-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  width: -webkit-max-content !important;
-  width: -moz-max-content !important;
   width: max-content !important;
 }
 .app-kanban .kanban-wrapper .kanban-container .kanban-board {
@@ -26,15 +22,9 @@
   outline: 0;
 }
 .app-kanban .kanban-wrapper .kanban-container .kanban-board .kanban-board-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .app-kanban .kanban-wrapper .kanban-container .kanban-board .kanban-board-header .kanban-title-board {
   font-size: 1.125rem;
@@ -66,18 +56,12 @@
   font-size: 0.8125rem;
 }
 .app-kanban .kanban-wrapper .kanban-container .kanban-board .kanban-title-button:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .app-kanban .kanban-wrapper .kanban-container .kanban-board .kanban-item {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 16.25rem;
   padding: 1rem 1rem;
   margin-bottom: 1rem;
@@ -149,8 +133,7 @@
 }
 .light-style .app-kanban .kanban-board .kanban-item {
   background-color: #fff;
-  -webkit-box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, 0.1);
-          box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, 0.1);
+  box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, 0.1);
 }
 .light-style .app-kanban .kanban-add-new-board label {
   color: #5d596c;
@@ -161,8 +144,7 @@
 }
 .dark-style .app-kanban .kanban-board .kanban-item {
   background-color: #2f3349;
-  -webkit-box-shadow: 0 0.25rem 1.25rem rgba(15, 20, 34, 0.4);
-          box-shadow: 0 0.25rem 1.25rem rgba(15, 20, 34, 0.4);
+  box-shadow: 0 0.25rem 1.25rem rgba(15, 20, 34, 0.4);
 }
 .dark-style .app-kanban .kanban-add-new-board label {
   color: #cfd3ec;
