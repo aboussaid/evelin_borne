@@ -4,43 +4,35 @@
 
 'use strict';
 
-$(function () {
-  const selectPicker = $('.selectpicker');
-
-  // Bootstrap select
-  if (selectPicker.length) {
-    selectPicker.selectpicker();
-  }
-});
 (function () {
-  // Vertical Wizard
+  // Icons Wizard
   // --------------------------------------------------------------------
-  const wizardVertical = document.querySelector('.wizard-vertical'),
-    wizardVerticalBtnNextList = [].slice.call(wizardVertical.querySelectorAll('.btn-next')),
-    wizardVerticalBtnPrevList = [].slice.call(wizardVertical.querySelectorAll('.btn-prev')),
-    wizardVerticalBtnSubmit = wizardVertical.querySelector('.btn-submit');
+  const wizardIcons = document.querySelector('#wizard-form');
 
-  if (typeof wizardVertical !== undefined && wizardVertical !== null) {
-    const verticalStepper = new Stepper(wizardVertical, {
+  if (typeof wizardIcons !== undefined && wizardIcons !== null) {
+    const wizardIconsBtnNextList = [].slice.call(wizardIcons.querySelectorAll('.btn-next')),
+      wizardIconsBtnPrevList = [].slice.call(wizardIcons.querySelectorAll('.btn-prev')),
+      wizardIconsBtnSubmit = wizardIcons.querySelector('.btn-submit');
+
+    const iconsStepper = new Stepper(wizardIcons, {
       linear: false
     });
-    if (wizardVerticalBtnNextList) {
-      wizardVerticalBtnNextList.forEach(wizardVerticalBtnNext => {
-        wizardVerticalBtnNext.addEventListener('click', event => {
-          verticalStepper.next();
+    if (wizardIconsBtnNextList) {
+      wizardIconsBtnNextList.forEach(wizardIconsBtnNext => {
+        wizardIconsBtnNext.addEventListener('click', event => {
+          iconsStepper.next();
         });
       });
     }
-    if (wizardVerticalBtnPrevList) {
-      wizardVerticalBtnPrevList.forEach(wizardVerticalBtnPrev => {
-        wizardVerticalBtnPrev.addEventListener('click', event => {
-          verticalStepper.previous();
+    if (wizardIconsBtnPrevList) {
+      wizardIconsBtnPrevList.forEach(wizardIconsBtnPrev => {
+        wizardIconsBtnPrev.addEventListener('click', event => {
+          iconsStepper.previous();
         });
       });
     }
-
-    if (wizardVerticalBtnSubmit) {
-      wizardVerticalBtnSubmit.addEventListener('click', event => {
+    if (wizardIconsBtnSubmit) {
+      wizardIconsBtnSubmit.addEventListener('click', event => {
         alert('Submitted..!!');
       });
     }

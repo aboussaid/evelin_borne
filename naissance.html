@@ -1,0 +1,756 @@
+<!doctype html>
+
+<html
+  lang="en"
+  class="light-style layout-navbar-fixed layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="vertical-menu-template-no-customizer-starter">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Naissance - EveLin</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+      rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontello.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" />
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/flatpickr/flatpickr.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/bs-stepper/bs-stepper.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar layout-without-menu">
+      <div class="layout-container">
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-fluid navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar">
+            <a href="landing-page.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <img src="assets/img/evelin.png" class="img-fluid" />
+              </span>
+            </a>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- Language -->
+                <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <i class="ti ti-world rounded-circle ti-md"></i>
+                    <!-- <img src="assets/vendor/fonts/flags/1x1/ci.svg" width="26" style="border: 1px solid #f7f6f9" /> -->
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);" data-language="en" data-text-direction="ltr">
+                        <span class="align-middle">Anglais</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);" data-language="fr" data-text-direction="ltr">
+                        <span class="align-middle">Français</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ Language -->
+
+                <!-- Weather -->
+                <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
+                  <a class="nav-link hide-arrow" href="javascript:void(0);"> <i class="ti ti-md ti-sun"></i> 17°c </a>
+                </li>
+                <!--/ Weather -->
+              </ul>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-fluid flex-grow-1 container-p-y">
+              <div class="row align-items-baseline h-100">
+                <div class="col-12 mb-4">
+                  <div class="bs-stepper wizard-icons mt-2" id="wizard-form">
+                    <div class="bs-stepper-header">
+                      <div class="step" data-target="#enfant">
+                        <button type="button" class="step-trigger">
+                          <span class="bs-stepper-circle"> 1 </span>
+                          <span class="bs-stepper-label">Enfant</span>
+                        </button>
+                      </div>
+                      <div class="line">
+                        <i class="ti ti-chevron-right"></i>
+                      </div>
+                      <div class="step" data-target="#naissance">
+                        <button type="button" class="step-trigger">
+                          <span class="bs-stepper-circle"> 2 </span>
+                          <span class="bs-stepper-label">Naissance</span>
+                        </button>
+                      </div>
+                      <div class="line">
+                        <i class="ti ti-chevron-right"></i>
+                      </div>
+                      <div class="step" data-target="#pere">
+                        <button type="button" class="step-trigger">
+                          <span class="bs-stepper-circle"> 3 </span>
+                          <span class="bs-stepper-label">Père</span>
+                        </button>
+                      </div>
+                      <div class="line">
+                        <i class="ti ti-chevron-right"></i>
+                      </div>
+                      <div class="step" data-target="#mere">
+                        <button type="button" class="step-trigger">
+                          <span class="bs-stepper-circle"> 4 </span>
+                          <span class="bs-stepper-label">Mère</span>
+                        </button>
+                      </div>
+                      <div class="line">
+                        <i class="ti ti-chevron-right"></i>
+                      </div>
+                      <div class="step" data-target="#declarant">
+                        <button type="button" class="step-trigger">
+                          <span class="bs-stepper-circle"> 5 </span>
+                          <span class="bs-stepper-label">Déclarant et acte</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="bs-stepper-content">
+                      <form onSubmit="return false">
+                        <!-- Infos enfant -->
+                        <div id="enfant" class="content">
+                          <div class="alert alert-success mb-3" role="alert">
+                            <p>Veuillez saisir les informations concernant l'enfant.</p>
+                          </div>
+
+                          <div class="content-header mb-3">
+                            <h6 class="mb-0">Informations sur l'enfant</h6>
+                          </div>
+                          <div class="row g-3">
+                            <div class="col-sm-6">
+                              <label class="form-label" for="enfant-prenom">Prénoms</label>
+                              <input type="text" id="enfant-prenom" class="form-control" />
+                            </div>
+                            <div class="col-sm-6">
+                              <label class="form-label" for="enfant-nom">Nom</label>
+                              <input type="text" id="enfant-nom" class="form-control" />
+                            </div>
+                            <div class="col-sm-6">
+                              <label class="form-label">Sexe</label>
+                              <div class="form-control border-0 px-0">
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="enfant-sexe"
+                                    id="enfant-sexe-m"
+                                    value="0" />
+                                  <label class="form-check-label" for="enfant-sexe-m">Masculin</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="enfant-sexe"
+                                    id="enfant-sexe-f"
+                                    value="1" />
+                                  <label class="form-check-label" for="enfant-sexe-f">feminin</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <hr class="my-4 mx-n4" />
+
+                          <div class="content-header mb-3">
+                            <h6 class="mb-0">Informations sur la naissance de l'enfant</h6>
+                          </div>
+                          <div class="row g-3">
+                            <div class="col-sm-6">
+                              <label class="form-label" for="enfant-prenom">Date de naissance</label>
+                              <input type="text" id="enfant-prenom" class="form-control flatpickr-date" />
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="enfant-prenom">Heure de naissance</label>
+                              <input type="text" id="enfant-prenom" class="form-control flatpickr-times" />
+                            </div>
+
+                            <div class="col-sm-12">
+                              <label class="form-label">Lieu d'accouchement</label>
+                              <div class="form-control border-0 px-0">
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-domocile"
+                                    value="domicile" />
+                                  <label class="form-check-label" for="lieu-acouchement-domicile">Domicile</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-centre"
+                                    value="centre" />
+                                  <label class="form-check-label" for="lieu-acouchement-centre">Centre de santé</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-clinique"
+                                    value="clinique" />
+                                  <label class="form-check-label" for="lieu-acouchement-clinique">Clinique</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-autre"
+                                    value="autre" />
+                                  <label class="form-check-label" for="lieu-acouchement-autre">Autres</label>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="quartier">Quartier/Rue/Campement de l'accouchement</label>
+                              <input type="text" id="quartier" class="form-control" />
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="localite">Localité de naissance</label>
+                              <input type="text" id="localite" class="form-control" />
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="poids">Poids (en grammes) </label>
+                              <input type="text" id="poids" class="form-control" />
+                            </div>
+
+                            <div class="col-12 d-flex justify-content-between">
+                              <button class="btn btn-label-secondary btn-prev" disabled>
+                                <i class="ti ti-arrow-left me-sm-1 me-0"></i>
+                                <span class="align-middle d-sm-inline-block d-none">Précédent</span>
+                              </button>
+                              <button class="btn btn-primary btn-next">
+                                <span class="align-middle d-sm-inline-block d-none me-sm-1">Suivant</span>
+                                <i class="ti ti-arrow-right"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Infos naissance -->
+                        <div id="naissance" class="content">
+                          <div class="alert alert-success mb-3" role="alert">
+                            <p>Veuillez saisir les informations concernant la naissance.</p>
+                          </div>
+                          <div class="content-header mb-3">
+                            <h6 class="mb-0">Informations sur l'enfant</h6>
+                          </div>
+                          <div class="row g-3">
+                            <div class="col-sm-6">
+                              <label class="form-label" for="enfant-prenom">Prénoms</label>
+                              <input type="text" id="enfant-prenom" class="form-control" />
+                            </div>
+                            <div class="col-sm-6">
+                              <label class="form-label">Sexe</label>
+                              <div class="form-control border-0 px-0">
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="enfant-sexe"
+                                    id="enfant-sexe-m"
+                                    value="0" />
+                                  <label class="form-check-label" for="enfant-sexe-m">Masculin</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="enfant-sexe"
+                                    id="enfant-sexe-f"
+                                    value="1" />
+                                  <label class="form-check-label" for="enfant-sexe-f">feminin</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <hr class="my-4 mx-n4" />
+
+                          <div class="content-header mb-3">
+                            <h6 class="mb-0">Informations sur la déclaration</h6>
+                          </div>
+                          <div class="row g-3">
+                            <div class="col-sm-6">
+                              <label class="form-label" for="numero-declaration">Numéro de Déclaration</label>
+                              <input type="text" id="numero-declaration" class="form-control" />
+                            </div>
+
+                            <div class="col-12 d-flex justify-content-between">
+                              <button class="btn btn-label-secondary btn-prev">
+                                <i class="ti ti-arrow-left me-sm-1 me-0"></i>
+                                <span class="align-middle d-sm-inline-block d-none">Précédent</span>
+                              </button>
+                              <button class="btn btn-primary btn-next">
+                                <span class="align-middle d-sm-inline-block d-none me-sm-1">Suivant</span>
+                                <i class="ti ti-arrow-right"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Infos pere -->
+                        <div id="pere" class="content">
+                          <div class="alert alert-success mb-3" role="alert">
+                            <p>Veuillez saisir les informations concernant le père.</p>
+                          </div>
+                          <div class="content-header mb-3">
+                            <h6 class="mb-0">Informations sur la naissance de l'enfant</h6>
+                          </div>
+                          <div class="row g-3">
+                            <div class="col-sm-6">
+                              <label class="form-label" for="enfant-prenom">Date de naissance</label>
+                              <input type="text" id="enfant-prenom" class="form-control flatpickr-date" />
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="enfant-prenom">Heure de naissance</label>
+                              <input type="text" id="enfant-prenom" class="form-control flatpickr-times" />
+                            </div>
+
+                            <div class="col-sm-12">
+                              <label class="form-label">Lieu d'accouchement</label>
+                              <div class="form-control border-0 px-0">
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-domocile"
+                                    value="domicile" />
+                                  <label class="form-check-label" for="lieu-acouchement-domicile">Domicile</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-centre"
+                                    value="centre" />
+                                  <label class="form-check-label" for="lieu-acouchement-centre">Centre de santé</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-clinique"
+                                    value="clinique" />
+                                  <label class="form-check-label" for="lieu-acouchement-clinique">Clinique</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-autre"
+                                    value="autre" />
+                                  <label class="form-check-label" for="lieu-acouchement-autre">Autres</label>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="quartier">Quartier/Rue/Campement de l'accouchement</label>
+                              <input type="text" id="quartier" class="form-control" />
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="localite">Localité de naissance</label>
+                              <input type="text" id="localite" class="form-control" />
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="poids">Poids (en grammes) </label>
+                              <input type="text" id="poids" class="form-control" />
+                            </div>
+
+                            <div class="col-12 d-flex justify-content-between">
+                              <button class="btn btn-label-secondary btn-prev">
+                                <i class="ti ti-arrow-left me-sm-1 me-0"></i>
+                                <span class="align-middle d-sm-inline-block d-none">Précédent</span>
+                              </button>
+                              <button class="btn btn-primary btn-next">
+                                <span class="align-middle d-sm-inline-block d-none me-sm-1">Suivant</span>
+                                <i class="ti ti-arrow-right"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Info mere -->
+                        <div id="mere" class="content">
+                          <div class="alert alert-success mb-3" role="alert">
+                            <p>Veuillez saisir les informations concernant la mère.</p>
+                          </div>
+                          <div class="content-header mb-3">
+                            <h6 class="mb-0">Informations sur la déclaration</h6>
+                          </div>
+                          <div class="row g-3">
+                            <div class="col-sm-6">
+                              <label class="form-label" for="numero-declaration">Numéro de Déclaration</label>
+                              <input type="text" id="numero-declaration" class="form-control" />
+                            </div>
+                          </div>
+
+                          <hr class="my-4 mx-n4" />
+
+                          <div class="content-header mb-3">
+                            <h6 class="mb-0">Informations sur l'enfant</h6>
+                          </div>
+                          <div class="row g-3">
+                            <div class="col-sm-6">
+                              <label class="form-label" for="enfant-prenom">Prénoms</label>
+                              <input type="text" id="enfant-prenom" class="form-control" />
+                            </div>
+                            <div class="col-sm-6">
+                              <label class="form-label">Sexe</label>
+                              <div class="form-control border-0 px-0">
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="enfant-sexe"
+                                    id="enfant-sexe-m"
+                                    value="0" />
+                                  <label class="form-check-label" for="enfant-sexe-m">Masculin</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="enfant-sexe"
+                                    id="enfant-sexe-f"
+                                    value="1" />
+                                  <label class="form-check-label" for="enfant-sexe-f">feminin</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <hr class="my-4 mx-n4" />
+
+                          <div class="content-header mb-3">
+                            <h6 class="mb-0">Informations sur la naissance de l'enfant</h6>
+                          </div>
+                          <div class="row g-3">
+                            <div class="col-sm-6">
+                              <label class="form-label" for="enfant-prenom">Date de naissance</label>
+                              <input type="text" id="enfant-prenom" class="form-control flatpickr-date" />
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="enfant-prenom">Heure de naissance</label>
+                              <input type="text" id="enfant-prenom" class="form-control flatpickr-times" />
+                            </div>
+
+                            <div class="col-sm-12">
+                              <label class="form-label">Lieu d'accouchement</label>
+                              <div class="form-control border-0 px-0">
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-domocile"
+                                    value="domicile" />
+                                  <label class="form-check-label" for="lieu-acouchement-domicile">Domicile</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-centre"
+                                    value="centre" />
+                                  <label class="form-check-label" for="lieu-acouchement-centre">Centre de santé</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-clinique"
+                                    value="clinique" />
+                                  <label class="form-check-label" for="lieu-acouchement-clinique">Clinique</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-autre"
+                                    value="autre" />
+                                  <label class="form-check-label" for="lieu-acouchement-autre">Autres</label>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="quartier">Quartier/Rue/Campement de l'accouchement</label>
+                              <input type="text" id="quartier" class="form-control" />
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="localite">Localité de naissance</label>
+                              <input type="text" id="localite" class="form-control" />
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="poids">Poids (en grammes) </label>
+                              <input type="text" id="poids" class="form-control" />
+                            </div>
+
+                            <div class="col-12 d-flex justify-content-between">
+                              <button class="btn btn-label-secondary btn-prev">
+                                <i class="ti ti-arrow-left me-sm-1 me-0"></i>
+                                <span class="align-middle d-sm-inline-block d-none">Précédent</span>
+                              </button>
+                              <button class="btn btn-primary btn-next">
+                                <span class="align-middle d-sm-inline-block d-none me-sm-1">Suivant</span>
+                                <i class="ti ti-arrow-right"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Infos declarant -->
+                        <div id="declarant" class="content">
+                          <div class="alert alert-success mb-3" role="alert">
+                            <p>Veuillez saisir les informations concernant le déclarant.</p>
+                          </div>
+                          <div class="content-header mb-3">
+                            <h6 class="mb-0">Informations sur la déclaration</h6>
+                          </div>
+                          <div class="row g-3">
+                            <div class="col-sm-6">
+                              <label class="form-label" for="numero-declaration">Numéro de Déclaration</label>
+                              <input type="text" id="numero-declaration" class="form-control" />
+                            </div>
+                          </div>
+
+                          <hr class="my-4 mx-n4" />
+
+                          <div class="content-header mb-3">
+                            <h6 class="mb-0">Informations sur l'enfant</h6>
+                          </div>
+                          <div class="row g-3">
+                            <div class="col-sm-6">
+                              <label class="form-label" for="enfant-prenom">Prénoms</label>
+                              <input type="text" id="enfant-prenom" class="form-control" />
+                            </div>
+                            <div class="col-sm-6">
+                              <label class="form-label">Sexe</label>
+                              <div class="form-control border-0 px-0">
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="enfant-sexe"
+                                    id="enfant-sexe-m"
+                                    value="0" />
+                                  <label class="form-check-label" for="enfant-sexe-m">Masculin</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="enfant-sexe"
+                                    id="enfant-sexe-f"
+                                    value="1" />
+                                  <label class="form-check-label" for="enfant-sexe-f">feminin</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <hr class="my-4 mx-n4" />
+
+                          <div class="content-header mb-3">
+                            <h6 class="mb-0">Informations sur la naissance de l'enfant</h6>
+                          </div>
+                          <div class="row g-3">
+                            <div class="col-sm-6">
+                              <label class="form-label" for="enfant-prenom">Date de naissance</label>
+                              <input type="text" id="enfant-prenom" class="form-control flatpickr-date" />
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="enfant-prenom">Heure de naissance</label>
+                              <input type="text" id="enfant-prenom" class="form-control flatpickr-times" />
+                            </div>
+
+                            <div class="col-sm-12">
+                              <label class="form-label">Lieu d'accouchement</label>
+                              <div class="form-control border-0 px-0">
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-domocile"
+                                    value="domicile" />
+                                  <label class="form-check-label" for="lieu-acouchement-domicile">Domicile</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-centre"
+                                    value="centre" />
+                                  <label class="form-check-label" for="lieu-acouchement-centre">Centre de santé</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-clinique"
+                                    value="clinique" />
+                                  <label class="form-check-label" for="lieu-acouchement-clinique">Clinique</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="lieu-acouchement"
+                                    id="lieu-acouchement-autre"
+                                    value="autre" />
+                                  <label class="form-check-label" for="lieu-acouchement-autre">Autres</label>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="quartier">Quartier/Rue/Campement de l'accouchement</label>
+                              <input type="text" id="quartier" class="form-control" />
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="localite">Localité de naissance</label>
+                              <input type="text" id="localite" class="form-control" />
+                            </div>
+
+                            <div class="col-sm-6">
+                              <label class="form-label" for="poids">Poids (en grammes) </label>
+                              <input type="text" id="poids" class="form-control" />
+                            </div>
+
+                            <div class="col-12 d-flex justify-content-between">
+                              <button class="btn btn-label-secondary btn-prev">
+                                <i class="ti ti-arrow-left me-sm-1 me-0"></i>
+                                <span class="align-middle d-sm-inline-block d-none">Précédent</span>
+                              </button>
+                              <button class="btn btn-primary btn-next">
+                                <span class="align-middle d-sm-inline-block d-none me-sm-1">Valider</span>
+                                <i class="ti ti-arrow-right"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+
+      <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+      <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/moment/moment.js"></script>
+    <script src="assets/vendor/libs/flatpickr/flatpickr.js"></script>
+    <script src="assets/vendor/libs/select2/select2.js"></script>
+    <script src="assets/vendor/libs/bs-stepper/bs-stepper.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form.js"></script>
+
+    <!-- Page JS -->
+  </body>
+</html>

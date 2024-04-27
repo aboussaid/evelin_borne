@@ -1612,3 +1612,14 @@ div#statistique-commune .card-body {
 .carousel-dark .carousel-indicators [data-bs-target] {
   background-color: #60c692;
 }
+
+.bs-stepper .bs-stepper-header {
+  flex-direction: row !important;
+}
+.bs-stepper .bs-stepper-header .step .step-trigger {
+  flex-direction: column !important;
+  padding: 0 !important;
+}
+.bs-stepper .bs-stepper-header .step .step-trigger .bs-stepper-label {
+  margin: 0 !important;
+}
