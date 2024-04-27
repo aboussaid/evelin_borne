@@ -1608,3 +1608,7 @@ div#statistique-commune .card-body {
 .carousel-control-next {
   width: 30px;
 }
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #60c692;
+}
