@@ -1604,21 +1604,7 @@ div#statistique-commune .card-body {
     height: 0;
   }
 }
-.jstree-anchor {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-#chat-app {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #60c692;
-  color: #fff;
-  border-radius: 50%;
-  padding: 15px;
-  width: 20px;
-  height: 20px;
-  box-sizing: content-box;
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px;
 }
