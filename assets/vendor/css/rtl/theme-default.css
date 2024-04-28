@@ -1622,4 +1622,6 @@ div#statistique-commune .card-body {
 }
 .bs-stepper .bs-stepper-header .step .step-trigger .bs-stepper-label {
   margin: 0 !important;
+  white-space: normal;
+  text-align: center !important;
 }
