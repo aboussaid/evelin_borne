@@ -1613,19 +1613,21 @@ div#statistique-commune .card-body {
   background-color: #60c692;
 }
 
-.bs-stepper .bs-stepper-header {
-  flex-direction: row !important;
-}
-.bs-stepper .bs-stepper-header .step {
-  flex: 1 1 0px;
-  text-align: center;
-}
-.bs-stepper .bs-stepper-header .step .step-trigger {
-  flex-direction: column !important;
-  padding: 0 !important;
-}
-.bs-stepper .bs-stepper-header .step .step-trigger .bs-stepper-label {
-  margin: 0 !important;
-  white-space: normal;
-  text-align: center !important;
+@media (min-width: 480px) {
+  .bs-stepper .bs-stepper-header {
+    flex-direction: row !important;
+  }
+  .bs-stepper .bs-stepper-header .step {
+    flex: 1 1 0px;
+    text-align: center;
+  }
+  .bs-stepper .bs-stepper-header .step .step-trigger {
+    flex-direction: column !important;
+    padding: 0 !important;
+  }
+  .bs-stepper .bs-stepper-header .step .step-trigger .bs-stepper-label {
+    margin: 0 !important;
+    white-space: normal;
+    text-align: center !important;
+  }
 }
