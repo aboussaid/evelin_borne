@@ -1616,6 +1616,10 @@ div#statistique-commune .card-body {
 .bs-stepper .bs-stepper-header {
   flex-direction: row !important;
 }
+.bs-stepper .bs-stepper-header .step {
+  flex: 1 1 0px;
+  text-align: center;
+}
 .bs-stepper .bs-stepper-header .step .step-trigger {
   flex-direction: column !important;
   padding: 0 !important;
